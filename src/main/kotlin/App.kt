@@ -10,7 +10,10 @@ import kotlin.system.exitProcess
  * objects of those objects and so on.
  */
 fun main(args: Array<String>) {
-    val injector : Injector = if(args[0] == "--prod"){
+    val injector : Injector = if(args.isEmpty()) {
+            println("No flag detected")
+            exitProcess(-1)
+    } else if(args[0] == "--prod"){
         prod() // Create production injector
     } else if(args[0] == "--dev"){
         dev() // Create development injector
