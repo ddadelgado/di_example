@@ -24,6 +24,8 @@ fun main(args: Array<String>) {
 
     // injection only needs to happen once
     val spaceship : Spaceship = injector.getInstance(Spaceship::class.java)
+
+    // example code to see diff outputs in terminal
     spaceship.launch()
     spaceship.status()
 }
