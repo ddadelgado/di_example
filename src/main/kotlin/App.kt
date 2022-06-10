@@ -11,14 +11,14 @@ import kotlin.system.exitProcess
  */
 fun main(args: Array<String>) {
     val injector : Injector = if(args.isEmpty()) {
-            println("No flag detected")
+            println("no flag --dev or --prod detected")
             exitProcess(-1)
     } else if(args[0] == "--prod"){
         prod() // Create production injector
     } else if(args[0] == "--dev"){
         dev() // Create development injector
     } else {
-        println("No flag detected")
+        println("no flag --dev or --prod detected")
         exitProcess(-1)
     }
 
