@@ -22,6 +22,7 @@ fun main(args: Array<String>) {
         exitProcess(-1)
     }
 
+    // injection only needs to happen once
     val spaceship : Spaceship = injector.getInstance(Spaceship::class.java)
     spaceship.launch()
     spaceship.status()
