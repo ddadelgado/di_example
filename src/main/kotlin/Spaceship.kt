@@ -14,4 +14,12 @@ class Spaceship @Inject constructor(
         controlPanel.getSpeed()
         controlPanel.getGasLeft()
     }
+
+    // this will inject a method, method will run
+    // upon object creation. Because it is a singleton,
+    // it will run only once
+    @Inject
+    fun init(){
+        println("Spaceship ready.")
+    }
 }
