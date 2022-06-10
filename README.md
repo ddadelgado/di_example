@@ -4,4 +4,4 @@ Code example showing how dependency injection works using Guice. It creates the 
 Check src/main/kotlin/App.kt to start following the example. 
 
 ### How to run
-To run the example run the main method with either "--prod" or "--dev" flag.
+To run the example run the main method with either `--prod` or `--dev` flag.
